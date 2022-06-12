@@ -13,6 +13,7 @@
     /* colour */
     --clr-main: #FFFFFF;
     --clr-complementary: #E5FAF4;
+    --clr-complementary-light: #04A777;
     --clr-complementary-dark: #006FFF;
   
     /* font size */
@@ -33,7 +34,6 @@
   /* *****************************Hero Section*************************** */
 
   .hero {
-    /* position: relative; */
     font-family: var(--ff-primary);
   }
 
@@ -44,10 +44,6 @@
 
   .search {
       position: absolute;
-      /* display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; */
       top: 35%;
       left: 50%;
       transform: translateY(-50%);
@@ -181,10 +177,315 @@
   .destinations-title {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      padding-top: 67px;
+      margin-left: 107px;
+      margin-right: 107px;
+  }
+
+  .destinations-title h2 {
+      font-size: 30px;
+      font-weight: 400;
+  }
+
+  .destinations-title a {
+      color: var(--clr-complementary-light);
   }
 
   .destinations-title button {
-      width: 64px;
+      width: 120px;
       font-size: 16px;
+      font-weight: 500;
+      background-color: var(--clr-complementary);
+      border: 1px solid #DCDCDC;
+      border-radius: 28px;
+  } 
+
+  .destinations-main {
+      padding: 46px 107px;
   }
+
+  .destinations-card {
+      background-color: var(--clr-complementary);
+  }
+
+  .destinations-img {
+      border: 3px solid var(--clr-complementary-light);
+  }
+
+  .destinations-img img{
+      object-fit: cover;
+      object-position: center;
+  }
+
+  .destinations-card-title {
+      color: var(--clr-complementary-light);
+      font-size: 24px;
+      font-weight: 500;
+  }
+
+  /************************** Things To Do Section ************************/
+
+  .thingsToDo-title {
+      margin-top: 54px;
+      margin-bottom: 60px;
+  }
+
+  .thingsToDo-title img{
+      margin-bottom: 33px;
+  }
+
+  .thingsToDo-title h2 {
+      font-size: 36px;
+      font-weight: 700;
+  }
+
+  .thingsToDo-title span{
+      color: var(--clr-complementary-dark);
+  }
+
+  .thingsToDo-card {
+      margin: 0px 205px;
+  }
+
+  .thingsToDo-card-img img{
+      height: 150px;
+      width: 200px;
+      object-fit: cover;
+  }
+
+  .thingsToDo-card-title {
+      font-size: 18px;
+      font-weight: 600;
+      height: 36px;
+      line-height: 18px;
+  }
+
+  .thingsToDo-card-subtitle {
+      font-size: 12px;
+      font-weight: 400;
+  }
+
+  .thingsToDo-card-top svg {
+      color: #333333;
+      fill: currentColor;
+      width: 18px;
+      height: 20px;        
+      padding-right: 3px;
+  }
+
+  .thingsToDo-card-btn-left {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 13px;
+  }
+
+  .thingsToDo-card-btn-right {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 20px;
+      font-style: semi-bold;
+  }
+
+  .thingsToDo-browseMore-btn a{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      padding: 20px 109px;
+      color: #191919;
+      border: 1px solid #DCDCDC;
+  }
+
+
+  /****************** Contact ************************/
+
+  
+  .contact-card-body {
+    padding-left: 57px;
+    margin-bottom: 100px;
+    background-color: var(--clr-complementary);
+  }
+
+  .contact-card-title {
+      font-family: var(--ff-secondary);
+      font-size: 64px;
+      font-weight: 400;
+      padding-top: 28px;
+      color: var(--clr-complementary-light);
+  }
+
+  .contact-card-text {
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--clr-complementary-light);
+      padding-bottom: 10px;
+  }
+
+  .contact-card-email input{
+      padding: 22px 45px;
+      font-size: 20px;
+  }
+
+  .contact-card-btn {
+      padding-top: 20px;
+  }
+
+  .contact-card-btn button{
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      color: var(--clr-main);
+      background: linear-gradient(90deg, #FE2900 0%, #FF9000 100%);
+  }
+
+  .contact-card-check {
+      padding-top: 20px;
+  }
+
+  .contact-card-check input{
+      font-size: 30px;
+      border: 2px solid #404040;
+  }
+
+  .contact-card-check label{
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--clr-complementary-light);
+  }
+
+  .contact-card-img {
+      object-fit: cover;
+      padding-right: 0;
+  }
+
+
+  /********************* Media Queries ********************************/
+
+  @media only screen and (max-width: 768px) {
+
+      /* Hero Mobile */
+
+      .hero-mobile h1 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .hero-mobile-card {
+        padding: 19px;
+        margin: 16px;
+      }
+      .hero-mobile-card-nav button{
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+      }
+      .hero-mobile-card-nav button:hover{
+          text-decoration: underline;
+          cursor: pointer;
+          font-weight: 600;
+          text-underline-offset: 16px;
+          text-decoration-thickness: 3px;
+          transition: all 0.5s ease-in;
+        }
+        .hero-mobile-card-nav button:last-child:after{
+            position: absolute;
+            padding-left: 60px;
+            content: url(/assets/images/heroBgMobileArrow.png);
+        }
+        .hero-mobile-search-form {
+            margin-top: 20px;
+            width: auto;
+            height: 56px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 28px;
+            border: 3px solid #DCDCDC;
+        }
+        .hero-mobile-search-form input {
+            all: unset;
+            font: 18px;
+            padding: 20px 26px;
+            width: 90%;
+            text-align: left;
+        }
+        
+        .hero-mobile-search-form button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+        }
+        .hero-mobile-search-selection button{
+            width: 250px;
+            margin: 24px;
+            padding: 8px 20px;
+            justify-content: space-between;
+        }
+        
+
+      /* Destinations Mobile */
+
+      .destinations-mobile {
+        background-color: var(--clr-complementary);
+      }
+      .destinations-mobile-title{
+        padding: 10px 15px;
+        text-align: center;
+      }
+
+      .destinations-mobile-title h2{
+        font-size: 18px;
+      }
+
+      .destinations-mobile-title a{
+        color: var(--clr-complementary-light);
+      }
+
+      .destinations-mobile-carousel {
+          padding: 20px 60px;
+      }
+      .destinations-mobile-button {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 16px;
+      }
+
+    /* Things To Do Mobile  */
+    .thingsToDoCarousels {
+        padding: 20px 40px;
+    }
+    .thingsToDo-mobile-card-img img{
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .contact-card-body {
+        padding: 20px;
+        overflow: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+      .destinations {
+        margin-top: 1000px;
+      }
+      .search {
+        top: 15%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        text-align: center;
+      }
+  }
+
+
+
+
+
+
+
 

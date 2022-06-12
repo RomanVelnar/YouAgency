@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oooh+Baby&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Hero Section -->
-    <section class="hero">
+
+    <section class="hero d-none d-sm-block">
         <img src="/assets/images/hero-bg.png" alt="">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 search">
+                <div class="col-8 search">
                     <h1>Family Travel & Leisure</h1>
-                    <div class="container search-area">
-                        <div class="row ml-auto search-nav">
+                    <div class="card search-area">
+                        <div class="ml-auto search-nav">
                             <ul>
                                 <li><a>Search All</a></li>
                                 <li><a>Things To Do</a></li>
@@ -33,12 +35,12 @@
                                 <button>
                                     <svg viewBox="0 0 1024 1024">
                                         <path class="path1" 
-                                        d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 
-                                        55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 
-                                        312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 
-                                        177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 
-                                        218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 
-                                        0-218.455 97.091-218.455 218.455z"> 
+                                            d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 
+                                            55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 
+                                            312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 
+                                            177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 
+                                            218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 
+                                            0-218.455 97.091-218.455 218.455z"> 
                                         </path>
                                     </svg>
                                 </button>
@@ -49,8 +51,8 @@
                                 <button href="">Location</button>
                                 <button href="">Family Members</button>
                             </div>
-                            <div> 
-                                <button class="search-button">Search</button>
+                            <div class="d-grid contact-card-btn col-12 justify-content-center">
+                                <button type="submit" class="btn btn-outline-dark border-0 btn-lg rounded-pill">Search</button>
                             </div>  
                     </div>
                     <div class="hero-text-bottom">
@@ -61,22 +63,760 @@
             </div>
         </div>
     </section>
-    <!-- Destinations Section -->
-    <section class="destinations">
+
+    <!-- Hero Section Mobile -->
+
+    <section class="d-block d-sm-none">
+        <img src="/assets/images/heroBgMobile.png" alt="picture">
         <div class="container">
-            <div class="destinations-title">
-                <h2>Incredible destinations in <span>Europe</span></h2>
-                <button>Show all</button>
+            <div class="col hero-mobile">
+                <h1 class="text-center mt-3">Family Travel & Leisure</h1>
+                <div class="card rounded-4 hero-mobile-card">
+                    <div class="flex-column hero-mobile-card-buttons">
+                        <div class=" flex-column justify-content-around hero-mobile-card-nav">
+                            <button type="button" class="btn btn-link">Search All</button>
+                            <button type="button" class="btn btn-link">Things To Do</button>
+                        </div>
+                    </div>
+                    <form class="hero-mobile-search-form" role="search">
+                        <input type="search" placeholder="Search Travel & Leisure">
+                        <button>
+                            <svg viewBox="0 0 1024 1024">
+                                <path class="path1" 
+                                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 
+                                    55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 
+                                    312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 
+                                    177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 
+                                    218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 
+                                    0-218.455 97.091-218.455 218.455z"> 
+                                </path>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="d-flex hero-mobile-search-selection">
+                        <button class="col btn border rounded-5" href="">Select Ages</button>
+                        <button class="col btn border rounded-5" href="">Family Interests</button>
+                    </div>
+                    <div class="d-flex hero-mobile-search-selection">
+                        <button class="col btn border rounded-5" href="">Location</button>
+                        <button class="col btn border rounded-5" href="">Family Members</button>
+                    </div>
+                    <div class="d-grid contact-card-btn">
+                        <button type="submit" class="btn btn-outline-dark border-0 btn-lg rounded-pill">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text-bottom text-center">
+                <p class="hero-text-bottom-main">or explore <a href="">near Brighton</a></p>
+                <p class="hero-text-bottom-alt">Book family-friendly stays and experiences around the globe! With these 1,000s of creative tips, virtual tools, STEM-inspired play and expert articles just a click away, it can be fun too.</p>
             </div>
         </div>
     </section>
-    <!-- Things To Do Section -->
-    <section class="thingsToDo">
 
+
+    <!-- Destinations Section -->
+
+    <section class="destinations d-none d-sm-block">
+        <div class="container">
+            <div class="destinations-title">
+                <h2>Incredible destinations in <a href="">Europe</a></h2>
+                <button>Show all</button>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 destinations-main">
+                <div class="col">
+                    <div class="card border-0 destinations-card">
+                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                            <img src="/assets/images/paris.png" alt="Paris" class="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center destinations-card-title">Paris</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 destinations-card">
+                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                            <img src="/assets/images/Barcelona.png" alt="Barcelona" class="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center destinations-card-title">Barcelona</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 destinations-card">
+                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                            <img src="/assets/images/rome.png" alt="Rome" class="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center destinations-card-title">Rome</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 destinations-card">
+                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                            <img src="/assets/images/london.png" alt="London" class="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center destinations-card-title">London</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 destinations-card">
+                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                            <img src="/assets/images/amsterdam.png" alt="Amsterdam" class="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center destinations-card-title">Amsterdam</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 destinations-card">
+                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                            <img src="/assets/images/prague.png" alt="Prague" class="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center destinations-card-title">Prague</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- Contact Section -->
-    <section class="contact">
 
+<!-- Destinations Mobile -->
+
+    <section class="destinations-mobile d-block d-sm-none">
+        <div class="container">
+            <div class="d-grid destinations-mobile-title">
+                <h2>Incredible destinations in <a href="">Europe</a></h2>
+            </div>
+            <div id="destinations-carousel-controls" class="carousel slide destinations-mobile-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/paris.png" alt="Paris" class="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center destinations-card-title">Paris</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/Barcelona.png" alt="Barcelona" class="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center destinations-card-title">Barcelona</h5>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="carousel-item">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/rome.png" alt="Rome" class="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center destinations-card-title">Rome</h5>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="carousel-item">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/london.png" alt="London" class="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center destinations-card-title">London</h5>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="carousel-item">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/amsterdam.png" alt="Amsterdam" class="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center destinations-card-title">Amsterdam</h5>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="carousel-item">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/prague.png" alt="Prague" class="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center destinations-card-title">Prague</h5>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinations-carousel-controls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#destinations-carousel-controls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="d-grid">
+                    <button class="btn btn-outline-dark rounded-pill destinations-mobile-button">Show all</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Things To Do Section -->
+
+    <section class="thingsToDo d-none d-sm-block">
+        <div class="container">
+            <div class="col text-center thingsToDo-title">
+                <div>
+                    <img src="/assets/images/toDoImage.png" alt="">
+                </div>
+                <div>
+                    <h2>Things To Do With Kids in <span>Brighton</span></h2>
+                </div>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-4 thingsToDo-card">
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class=" thingsToDo-card-img">
+                            <img src="/assets/images/cinderella.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded card-img-top"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <div class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="mb-5 thingsToDo-card-title">Cinderella Musical</h2>
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/phantom.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">Phantom Of The Opera</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/prince.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">Prince Of Egypt West End Show</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/future.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">Back To The Future Musical</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/showstoppers.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">The Showstoppers Kids Show</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/marryPoppins.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">Marry Poppins</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/hairspray.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">Hairspray Musical</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card border-0 mb-5">
+                        <figure class="thingsToDo-card-img">
+                            <img src="/assets/images/circus.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                        </figure>
+                        <div class="thingsToDo-card-subtitle">
+                            <header class="">
+                                <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                            0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                            7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                            1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                                <h2 class="text-large mb-5 thingsToDo-card-title">Circus 1903 Show</h2>
+                            </header>
+                        </div>
+                        <footer class="d-flex justify-content-between">
+                            <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                            <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center thingsToDo-browseMore-btn">
+                <a class="btn btn-outline-dark btn-lg rounded-pill">Browse more</a>
+            </div>
+        </div>
+    </section>
+
+<!-- ******************** Things To Do Mobile Section ************************ -->
+
+    <section class="thingsToDo d-block d-sm-none">
+        <div class="container">
+            <div class="col text-center thingsToDo-title">
+                <div>
+                    <img src="/assets/images/toDoImage.png" alt="">
+                </div>
+                <div>
+                    <h2>Things To Do With Kids in <span>Brighton</span></h2>
+                </div>
+            </div>
+            <div id="thingsToDo-carousel-controls" class="carousel slide thingsToDoCarousels" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/cinderella.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded card-img-top"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <div class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="mb-5 thingsToDo-card-title">Cinderella Musical</h2>
+                                </div>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/phantom.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">Phantom Of The Opera</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/prince.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">Prince Of Egypt West End Show</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/future.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">Back To The Future Musical</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/showstoppers.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">The Showstoppers Kids Show</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/marryPoppins.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">Marry Poppins</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/hairspray.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">Hairspray Musical</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                    <div class="carousel-item">
+                        <article class="card border-0 mb-5">
+                            <figure class="thingsToDo-mobile-card-img">
+                                <img src="/assets/images/circus.jpg" alt="Cinderella" class="image ratio ratio-1x1 overflow-hidden rounded"/>
+                            </figure>
+                            <div class="thingsToDo-card-subtitle">
+                                <header class="">
+                                    <div class="d-flex justify-content-between mb-2 thingsToDo-card-top">
+                                        <svg viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493
+                                                0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304
+                                                7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <h3 class="thingsToDo-card-subtitle">Barbican Centre</h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333333" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 
+                                                1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-large mb-5 thingsToDo-card-title">Circus 1903 Show</h2>
+                                </header>
+                            </div>
+                            <footer class="d-flex justify-content-between">
+                                <a class="btn btn-outline-dark thingsToDo-card-btn-left" href="#">More Info</a>
+                                <a class="btn btn-primary thingsToDo-card-btn-right" href="#">Book Tickets</a>
+                            </footer>
+                        </article>                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#thingsToDo-carousel-controls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#thingsToDo-carousel-controls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text-center thingsToDo-browseMore-btn">
+                <a class="btn btn-outline-dark btn-lg rounded-pill">Browse more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+    <section class="contact">
+        <div class="container mt-5">
+            <div class="row flex-row card contact-card-body border-0 rounded-3">
+                <img class="col-md-5 rounded-3 contact-card-img d-block d-sm-none" src="/assets/images/signUpPhoto.jpg" alt="sans"/>
+                <div class="col-sm-7">
+                    <div class="row card-body d-flex justify-content-center">
+                        <h4 class="contact-card-title">Dreaming of Holidays?</h4>
+                        <p class="text-left contact-card-text">1,000s of holiday ideas direct to your inbox for things to do, places to see with your kids.</p>
+                        <form>
+                            <div class="form-group contact-card-email">
+                                <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                            </div>
+                            <div class="d-grid contact-card-btn">
+                                <button type="submit" class="btn btn-outline-dark border-0 btn-lg rounded-pill">Subscribe</button>
+                            </div>
+                            <div class="form-check contact-card-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">By joining YOU you agree to YOU’s <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> and consent to receiving marketing communications from YOU.</label>
+                            </div>
+                        </form>
+                    </div>              
+                </div>
+                <img class="col-md-5 rounded-right rounded-3 contact-card-img d-none d-sm-block" src="/assets/images/signUpPhoto.jpg" alt="sans"/>
+            </div>
+        </div>
     </section>
 
 
