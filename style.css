@@ -301,7 +301,7 @@
 
   
   .contact-card-body {
-    padding-left: 57px;
+    /* padding-left: 57px; */
     margin-bottom: 100px;
     background-color: var(--clr-complementary);
   }
@@ -355,8 +355,8 @@
   }
 
   .contact-card-img {
-      object-fit: cover;
-      padding-right: 0;
+    object-fit: cover;
+    padding-right: 0;
   }
 
 
@@ -463,10 +463,12 @@
         width: 300px;
         object-fit: cover;
     }
-    .contact-card-body {
+
+    .contact {
         padding: 20px;
-        overflow: hidden;
     }
+
+
   }
 
   @media only screen and (max-width: 1024px) {
