@@ -204,73 +204,72 @@
   /************************** Things To Do Section ************************/
 
   .thingsToDo-title {
-      margin-top: 54px;
-      margin-bottom: 60px;
+    maSmargin-bottom: 60px;
   }
 
   .thingsToDo-title img{
-      margin-bottom: 33px;
+    margin-bottom: 33px;
   }
 
   .thingsToDo-title-h2 {
-      font-size: 36px;
-      font-weight: 700;
+    font-size: 36px;
+    font-weight: 700;
   }
 
   .thingsToDo-title span{
-      color: var(--clr-complementary-dark);
+    color: var(--clr-complementary-dark);
   }
 
   .thingsToDo-card {
-      margin: 0px 205px;
+    margin: 0px 205px;
   }
 
   .thingsToDo-card-img img{
-      height: 150px;
-      width: 200px;
-      object-fit: cover;
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
   }
 
   .thingsToDo-card-title {
-      font-size: 18px;
-      font-weight: 600;
-      height: 45px;
-      line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 45px;
+    line-height: 18px;
   }
 
   .thingsToDo-card-subtitle {
-      font-size: 12px;
-      font-weight: 400;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .thingsToDo-card-top svg {
-      color: #333333;
-      fill: currentColor;
-      width: 18px;
-      height: 20px;        
-      padding-right: 3px;
+    color: #333333;
+    fill: currentColor;
+    width: 18px;
+    height: 20px;        
+    padding-right: 3px;
   }
 
   .thingsToDo-card-btn-left {
-      font-size: 12px;
-      font-weight: 600;
-      padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 13px;
   }
 
   .thingsToDo-card-btn-right {
-      font-size: 12px;
-      font-weight: 600;
-      padding: 7px 20px;
-      font-style: semi-bold;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 20px;
+    font-style: semi-bold;
   }
 
   .thingsToDo-browseMore-btn a{
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 16px;
-      padding: 20px 109px;
-      color: #191919;
-      border: 1px solid #DCDCDC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 20px 109px;
+    color: #191919;
+    border: 1px solid #DCDCDC;
   }
 
 
@@ -278,58 +277,58 @@
 
   
   .contact-card-body {
-    /* padding-left: 57px; */
+    padding-left: 57px;
     margin-bottom: 100px;
     background-color: var(--clr-complementary);
   }
 
   .contact-card-title {
-      font-family: var(--ff-secondary);
-      font-size: 64px;
-      font-weight: 400;
-      padding-top: 28px;
-      color: var(--clr-complementary-light);
+    font-family: var(--ff-secondary);
+    font-size: 64px;
+    font-weight: 400;
+    padding-top: 28px;
+    color: var(--clr-complementary-light);
   }
 
   .contact-card-text {
-      font-size: 24px;
-      font-weight: 400;
-      color: var(--clr-complementary-light);
-      padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--clr-complementary-light);
+    padding-bottom: 10px;
   }
 
   .contact-card-email input{
-      padding: 22px 45px;
-      font-size: 20px;
+    padding: 22px 45px;
+    font-size: 20px;
   }
 
   .contact-card-btn {
-      padding-top: 20px;
-      margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
   }
 
   .contact-card-btn button{
-      font-size: 20px;
-      font-weight: 600;
-      padding-top: 22px;
-      padding-bottom: 22px;
-      color: var(--clr-main);
-      background: linear-gradient(90deg, #FE2900 0%, #FF9000 100%);
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: var(--clr-main);
+    background: linear-gradient(90deg, #FE2900 0%, #FF9000 100%);
   }
 
   .contact-card-check {
-      padding-top: 20px;
+    padding-top: 20px;
+    font-size: 30px;
   }
 
   .contact-card-check input{
-      font-size: 30px;
-      border: 2px solid #404040;
+    border: 2px solid #404040;
   }
 
   .contact-card-check label{
-      font-size: 12px;
-      font-weight: 400;
-      color: var(--clr-complementary-light);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--clr-complementary-light);
   }
 
   .contact-card-img {
