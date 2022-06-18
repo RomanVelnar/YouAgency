@@ -348,27 +348,93 @@
 
   /********************* Media Queries ********************************/
 
+  @media screen and (max-width: 576px) {
+
+/* Hero */
+
+    .search {
+        padding-top: 45% !important;
+        padding-left: 0vw;
+        padding-right: 0vh;
+    }
+    .search-title {
+        color: #212D40;
+    }
+    .search-selection ul li {
+        font-size: 20px !important;
+        white-space: nowrap;
+        text-align: center;
+        justify-items: center;
+        width: auto;
+    }
+    .search-selection ul li:not(:nth-child(1)):not(:nth-child(2)) {
+        display: none;
+    }
+
+/* Destinations */
+    .destinations-title {
+        font-size: 14px !important;
+    }
+    .destinations-button-btn {
+        font-size: 12px !important;
+        padding: 0px 20px !important;
+    }
+    .destinations-main {
+        padding: 32px 5%;
+        text-align: center;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .destinations-card {
+        width: 60vw;
+        height: auto;
+    }
+    .destinations-card-title {
+        font-size: 18px;
+    }
+
+
+
+  }
+
+
+
   @media only screen and (max-width: 768px) {
 
-      /* Hero Mobile */
-
-
-
-    /* Things To Do Mobile  */
-    .thingsToDoCarousels {
-        padding: 20px 40px;
+    /* Hero Mobile */
+    .hero {
+        font-family: var(--ff-primary);
+        background-image: url("/assets/images/heroBgMobile.png");
+        background-repeat: no-repeat;
+        background-size:contain;
     }
-    .thingsToDo-mobile-card-img img{
-        height: 200px;
-        width: 300px;
-        object-fit: cover;
+
+    .search {
+        margin-top: 35%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
+
+    .search-title {
+        font-size: 20px !important;
+        text-align: center;
+    }
+    
+/* Destinations */
+    .destinations-title {
+        font-size: 30px !important;
+    }
+    .destinations-button-btn {
+        font-size: 12px !important;
+        padding: 0px 20px !important;
+    }
+
+
+    /* Contact  */
 
     .contact {
         padding: 20px;
     }
-
-
   }
 
   @media only screen and (max-width: 992px) {
@@ -470,7 +536,7 @@
         padding: 14px 28px !important;
         font-size: 16px !important;
     }
-    
+
     .contact-card-btn {
         padding-top: 12px;
         margin-bottom: 12px;
