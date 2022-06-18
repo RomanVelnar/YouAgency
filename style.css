@@ -123,6 +123,11 @@
     margin: 15px 0px;
   }
 
+  .search-selection ul {
+    font-size: 17px;
+  }
+
+
   .search-selection button {
     white-space: nowrap;
     text-align: center;
@@ -203,8 +208,12 @@
 
   /************************** Things To Do Section ************************/
 
+  .thingsToDo {
+    margin-top: 54px;
+  }
+
   .thingsToDo-title {
-    maSmargin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   .thingsToDo-title img{
@@ -221,7 +230,7 @@
   }
 
   .thingsToDo-card {
-    margin: 0px 205px;
+    margin: 0px 10%;
   }
 
   .thingsToDo-card-img img{
@@ -343,93 +352,7 @@
 
       /* Hero Mobile */
 
-      .hero-mobile h1 {
-        font-size: 36px;
-        font-weight: 700;
-        text-align: center;
-      }
-      .hero-mobile-card {
-        padding: 19px;
-        margin: 16px;
-      }
-      .hero-mobile-card-nav button{
-        font-size: 18px;
-        font-weight: 600;
-        color: black;
-        text-decoration: none;
-      }
-      .hero-mobile-card-nav button:hover{
-          text-decoration: underline;
-          cursor: pointer;
-          font-weight: 600;
-          text-underline-offset: 16px;
-          text-decoration-thickness: 3px;
-          transition: all 0.5s ease-in;
-        }
-        .hero-mobile-card-nav button:last-child:after{
-            position: absolute;
-            padding-left: 60px;
-            content: url(/assets/images/heroBgMobileArrow.png);
-        }
-        .hero-mobile-search-form {
-            margin-top: 20px;
-            width: auto;
-            height: 56px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 28px;
-            border: 3px solid #DCDCDC;
-        }
-        .hero-mobile-search-form input {
-            all: unset;
-            font: 18px;
-            padding: 20px 26px;
-            width: 90%;
-            text-align: left;
-        }
-        
-        .hero-mobile-search-form button {
-            all: unset;
-            cursor: pointer;
-            width: 44px;
-            height: 44px;
-        }
-        .hero-mobile-search-selection button{
-            width: 250px;
-            margin: 24px;
-            padding: 8px 20px;
-            justify-content: space-between;
-        }
-        
 
-      /* Destinations Mobile */
-
-      .destinations-mobile {
-        background-color: var(--clr-complementary);
-      }
-      .destinations-mobile-title{
-        padding: 10px 15px;
-        text-align: center;
-      }
-
-      .destinations-mobile-title h2{
-        font-size: 18px;
-      }
-
-      .destinations-mobile-title a{
-        color: var(--clr-complementary-light);
-      }
-
-      .destinations-mobile-carousel {
-          padding: 20px 60px;
-      }
-      .destinations-mobile-button {
-        font-size: 16px;
-        font-weight: 500;
-        padding: 16px;
-      }
 
     /* Things To Do Mobile  */
     .thingsToDoCarousels {
@@ -449,26 +372,247 @@
   }
 
   @media only screen and (max-width: 992px) {
-      .destinations {
-        margin-top: 0;
-      }
-      .search {
+    /* Hero */
+    .search {
         padding: 5vh 0vw;
-      }
+    }
+    .search-title {
+        font-size: 46px !important;
+    }
+    .search-selection ul li{
+        font-size: 11px;
+    }
+    .search-form {
+        height: auto;
+    }
+    .search-selection button {
+        font-size: 10px;
+    }
+    .search-area {
+        padding: 2px 40px;
+    }
+    .hero-text-bottom-main{
+        font-size: 14px;
+    }
+    .hero-text-bottom-alt{
+        font-size: 16px;
+    }
+
+/* Destinations */
+
+    .destinations-title {
+        font-size: 24px !important;
+    }
+    .destinations-button-btn {
+        font-size: 12px !important;
+        padding: 0px 40px !important;
+    }
+    .destinations-main {
+        padding: 32px 1%;
+    }
+    .destinations-card-title {
+        font-size: 18px;
+    }
+
+/* Things To Do */
+
+    .thingsToDo-card {
+        margin: 0px 0px;
+    }
+
+    .thingsToDo-title {
+        margin-bottom: 20px !important;
+    }    
+    .thingsToDo-title img{
+        margin-bottom: 20px;
+    }
+
+    .thingsToDo-title-h2 {
+        font-size: 20px !important;
+        font-weight: 700;
+    }
+
+    .thingsToDo-card-btn-left {
+        font-size: 10px !important;
+        font-weight: 600;
+        padding: 7px 10px !important;
+    }
+
+    .thingsToDo-card-btn-right {
+        font-size: 10px !important;
+        padding: 7px 10px;
+    }
+
+    .thingsToDo-browseMore-btn a{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 16px 80px;
+    }
+
+
+/* Contact */
+
+    .contact-card-body {
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contact-card-title {
+        font-size: 36px !important;
+        padding-top: 18px;
+    }
+
+    .contact-card-text {
+        font-size: 14px !important;
+    }
+
+    .contact-card-email input{
+        padding: 14px 28px !important;
+        font-size: 16px !important;
+    }
+    
+    .contact-card-btn {
+        padding-top: 12px;
+        margin-bottom: 12px;
+    }
+    .contact-card-btn button{
+        font-size: 12px !important;
+        font-weight: 600;
+    }
+
+    .contact-card-check {
+        padding-top: 18px;
+        font-size: 18px;
+    }
+    .contact-card-check label{
+        font-size: 10px;
+    }
+
+    .contact-card-img {
+        object-fit: cover;
+        padding-right: 0;
+}
   }
 
   @media only screen and (max-width: 1024px) {
-      .destinations {
-        margin-top: 0;
-      }
+    /* Hero */
       .search {
         padding: 10vh 5vw;
       }
+      .search-selection button {
+        font-size: 12px;
+      }
+      .contact-card-btn {
+        padding-top: 14px;
+        margin-bottom: 14px;
+        }
   }
 
   @media only screen and (max-width: 1200px) {
+    /* Hero */
     .search {
         padding: 10vh 5vw;
+    }
+    .search-title {
+        font-size: 60px;
+    }
+    .search-selection ul{
+        font-size: 14px;
+    }
+    .search-selection button {
+        font-size: 10px;
+    }
+    .hero-text-bottom-main{
+        font-size: 15px;
+    }
+    .hero-text-bottom-alt{
+        font-size: 17px;
+    }
+/* Destinations */
+
+    .destinations-title {
+        font-size: 26px;
+    }
+    .destinations-button-btn {
+        font-size: 14px;
+        padding: 14px 40px;
+    }
+    .destinations-main {
+        padding: 32px 1%;
+    }
+    .destinations-card-title {
+        font-size: 18px;
+    }
+
+/* Things To Do */
+
+    .thingsToDo-title {
+        margin-bottom: 40px;
+    }    
+    .thingsToDo-title img{
+        margin-bottom: 25px;
+    }
+
+    .thingsToDo-title-h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .thingsToDo-card-btn-left {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 7px 10px;
+    }
+
+    .thingsToDo-card-btn-right {
+    font-size: 12px;
+    padding: 7px 10px;
+    }
+
+    .thingsToDo-browseMore-btn a{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px 80px;
+    }
+
+/* Contact */
+
+    .contact-card-body {
+        padding-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    .contact-card-title {
+        font-size: 48px;
+        padding-top: 18px;
+    }
+
+    .contact-card-text {
+        font-size: 18px;
+    }
+
+    .contact-card-email input{
+        padding: 18px 36px;
+        font-size: 20px;
+    }
+    .contact-card-btn {
+        padding-top: 16px;
+        margin-bottom: 16px;
+    }
+    .contact-card-btn button{
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  
+    .contact-card-check {
+        padding-top: 18px;
+        font-size: 26px;
+    }
+
+    .contact-card-img {
+        object-fit: cover;
+        padding-right: 0;
     }
   }
 
