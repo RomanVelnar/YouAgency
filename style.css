@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   :root {
@@ -35,20 +36,21 @@
 
   .hero {
     font-family: var(--ff-primary);
+    background-image: url("/assets/images/hero-bg.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .hero img{
-      height: 100%;
-      width: 100%;
+
   }
 
   .search {
-      position: absolute;
-      top: 35%;
-      left: 50%;
-      transform: translateY(-50%);
-      transform: translateX(-50%);
+
       text-align: center;
+      padding: 0% 20vh;
   }
 
   .search h1 {
