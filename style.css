@@ -42,44 +42,46 @@
   }
 
   .search {
-      padding: 20vh 10vw;
+    padding-top: 20vh;
+    padding-left: 10vw;
+    padding-right: 10vh;
   }
 
-  .search h1 {
-      font-size: 72px;
-      font-weight: 700;
-      color: var(--clr-main);
+  .search-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--clr-main);
   }
 
   .search-area {
-      background-color: var(--clr-main);
-      border: 2px solid #FAFAFA;
-      border-radius: 20px;
-      padding: 20px 79px;
+    background-color: var(--clr-main);
+    border: 2px solid #FAFAFA;
+    border-radius: 20px;
+    padding: 20px 79px;
   }
 
   .search-area ul {
-      font-weight: 400;
-      font-size: 18px;
-      list-style: none;
-      padding: 10px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    list-style: none;
+    padding: 10px 0px;
   } 
 
   .search-area ul li:hover {
-      text-decoration: underline;
-      cursor: pointer;
-      font-weight: 600;
-      text-underline-offset: 20px;
-      text-decoration-thickness: 3px;
-      transition: all 0.5s ease-in;
-      padding-bottom: 23px;  
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 3px;
+    transition: all 0.5s ease-in;
+    padding-bottom: 23px;  
 }
 
   .search-area ul li:last-child:after {
-      position: absolute;
-      padding-left: 10px;
-      margin-top: -4px;
-      content: url(/assets/images/dropdown-arrow.png);
+    position: absolute;
+    padding-left: 10px;
+    margin-top: -4px;
+    content: url(/assets/images/dropdown-arrow.png);
   }
 
   .search-form {
@@ -95,18 +97,18 @@
   }
 
   .search-form input {
-      all: unset;
-      font: 18px;
-      padding: 10px 20px;
-      width: 90%;
-      text-align: left;
+    all: unset;
+    font: 18px;
+    padding: 10px 20px;
+    width: 90%;
+    text-align: left;
   }
   
   .search-form button {
-      all: unset;
-      cursor: pointer;
-      width: 44px;
-      height: 44px;
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
   }
 
   svg {
@@ -130,74 +132,73 @@
   }
 
   .hero-text-bottom-main {
-      margin-top: 24px;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 16px;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
   }
 
   .hero-text-bottom-alt {
-      font-size: 18px;
-      font-weight: 300;
-      white-space: pre-wrap;
-      padding: 0px 70px;
+    font-size: 18px;
+    font-weight: 300;
+    white-space: pre-wrap;
+    padding: 10px 70px;
   }
 
   /* ***********************Destinations************************ */
 
   .destinations {
-      margin-top: 400px;
-      background-color: var(--clr-complementary);
+    background-color: var(--clr-complementary);
+  }
+
+  .destinations-heading {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
   }
 
   .destinations-title {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 67px;
-      margin-left: 107px;
-      margin-right: 107px;
+    font-size: 30px;
+    font-weight: 400;
   }
 
-  .destinations-title h2 {
-      font-size: 30px;
-      font-weight: 400;
+  .destinations-title-link {
+    color: var(--clr-complementary-light);
   }
 
-  .destinations-title a {
-      color: var(--clr-complementary-light);
+  .destinations-button {
+    width: auto;
   }
-
-  .destinations-title button {
-      width: 120px;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: var(--clr-complementary);
-      border: 1px solid #DCDCDC;
-      border-radius: 28px;
-  } 
+  
+  .destinations-button-btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 50px;
+    background-color: var(--clr-complementary);
+    border: 1px solid #DCDCDC;
+  }
 
   .destinations-main {
-      padding: 46px 107px;
+    padding: 36px 3%;
   }
 
   .destinations-card {
-      background-color: var(--clr-complementary);
+    background-color: var(--clr-complementary);
   }
 
   .destinations-img {
-      border: 3px solid var(--clr-complementary-light);
+    border: 3px solid var(--clr-complementary-light);
   }
 
   .destinations-img img{
-      object-fit: cover;
-      object-position: center;
+    object-fit: cover;
+    object-position: center;
   }
 
   .destinations-card-title {
-      color: var(--clr-complementary-light);
-      font-size: 24px;
-      font-weight: 500;
+    color: var(--clr-complementary-light);
+    font-size: 24px;
+    font-weight: 500;
   }
 
   /************************** Things To Do Section ************************/
