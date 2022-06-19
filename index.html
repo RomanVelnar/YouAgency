@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oooh+Baby&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,11 +18,11 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 search">
+                <div class="col-12 col-md-12 col-sm-12 search">
                     <div class="row justify-content-center search-title">Family Travel & Leisure</div>
                     <div class="card align-content-center search-area">
                         <div class="row search-selection">
-                            <ul class="row col-md-12 ml-auto justify-content-between">
+                            <ul class="row col-12 col-sm-12 ml-auto justify-content-between">
                                 <li class="col-2"><a>Search All</a></li>
                                 <li class="col-2"><a>Things To Do</a></li>
                                 <li class="col-2"><a>Vacations</a></li>
@@ -44,14 +45,14 @@
                                 </svg>
                             </button>
                         </form>
-                        <div class="row justify-content-around search-selection ">
-                            <button type="button" class="btn btn-light rounded-pill col-md-3 col-lg-2" href="">Select Ages</button>
-                            <button type="button" class="btn btn-light rounded-pill col-md-3 col-lg-2" href="">Family Interests</button>
-                            <button type="button" class="btn btn-light rounded-pill col-md-3 col-lg-2" href="">Location</button>
-                            <button type="button" class="btn btn-light rounded-pill col-md-3 col-lg-2" href="">Family Members</button>
+                        <div class="row col-md-12 justify-content-around search-selection ">
+                            <button type="button" class="btn btn-light rounded-pill col-6 col-md-6 col-lg-2" href="">Select Ages</button>
+                            <button type="button" class="btn btn-light rounded-pill col-6 col-md-6 col-lg-2" href="">Family Interests</button>
+                            <button type="button" class="btn btn-light rounded-pill col-6 col-md-6 col-lg-2" href="">Location</button>
+                            <button type="button" class="btn btn-light rounded-pill col-6 col-md-6 col-lg-2" href="">Family Members</button>
                         </div>
-                        <div class="row contact-card-btn col-12 justify-content-center">
-                            <button type="submit" class="btn btn-outline-dark border-0 btn-lg rounded-pill col-6">Search</button>
+                        <div class="row col-12 justify-content-center contact-card-btn">
+                            <button type="submit" class="btn btn-outline-dark border-0 btn-lg rounded-pill col-12 col-md-6">Search</button>
                         </div>  
                     </div>
                     <div class="row col-12 text-center hero-text-bottom">
@@ -67,82 +68,85 @@
 
     <section class="destinations">
         <div class="container">
-            <div class="row col-12 justify-content-between destinations-heading">
-                <div class="row col-6">
+            <div class="row col-12 justify-content-sm-between justify-content-center destinations-heading">
+                <div class="col-12 col-sm-6 order-0 order-sm-0 text-center text-sm-start destinations-title-container">
                     <div class="destinations-title">Incredible destinations in <a class="destinations-title-link" href="">Europe</a></div>
                 </div>
-                <div class="row col-6 destinations-button">
+                <div class="col-12 col-sm-6 order-2 order-sm-1 destinations-button">
                     <button class="btn btn-light rounded-pill destinations-button-btn">Show all</button>
                 </div>
-            </div>
-            <div class="row g-4 col-12 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 destinations-main">
-                <div class="col">
-                    <div class="card border-0 destinations-card">
-                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
-                            <img src="/assets/images/paris.png" alt="Paris" class="">
+                <div class="row g-4 col-12 row-cols row-cols-sm-1 row-cols-md-3 row-cols-lg-6 justify-content-center order-1 order-sm-2 destinations-main">
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/paris.png" alt="Paris" class="">
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center destinations-card-title">Paris</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="text-center destinations-card-title">Paris</div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/Barcelona.png" alt="Barcelona" class="">
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center destinations-card-title">Barcelona</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/rome.png" alt="Rome" class="">
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center destinations-card-title">Rome</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/london.png" alt="London" class="">
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center destinations-card-title">London</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/amsterdam.png" alt="Amsterdam" class="">
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center destinations-card-title">Amsterdam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 destinations-card">
+                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
+                                <img src="/assets/images/prague.png" alt="Prague" class="">
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center destinations-card-title">Prague</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card border-0 destinations-card">
-                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
-                            <img src="/assets/images/Barcelona.png" alt="Barcelona" class="">
-                        </div>
-                        <div class="card-body">
-                            <div class="text-center destinations-card-title">Barcelona</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 destinations-card">
-                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
-                            <img src="/assets/images/rome.png" alt="Rome" class="">
-                        </div>
-                        <div class="card-body">
-                            <div class="text-center destinations-card-title">Rome</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 destinations-card">
-                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
-                            <img src="/assets/images/london.png" alt="London" class="">
-                        </div>
-                        <div class="card-body">
-                            <div class="text-center destinations-card-title">London</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 destinations-card">
-                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
-                            <img src="/assets/images/amsterdam.png" alt="Amsterdam" class="">
-                        </div>
-                        <div class="card-body">
-                            <div class="text-center destinations-card-title">Amsterdam</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 destinations-card">
-                        <div class="ratio ratio-1x1 rounded-circle overflow-hidden destinations-img">
-                            <img src="/assets/images/prague.png" alt="Prague" class="">
-                        </div>
-                        <div class="card-body">
-                            <div class="text-center destinations-card-title">Prague</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- Things To Do Section -->
 
-    <section class="thingsToDo d-none d-sm-block">
+    <section class="thingsToDo">
         <div class="container">
             <div class="col text-center thingsToDo-title">
                 <div>
@@ -152,7 +156,7 @@
                     <div>Things To Do With Kids in <span>Brighton</span></div>
                 </div>
             </div>
-            <div class="row g-4 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 thingsToDo-card">
+            <div class="row g-4 row-cols-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 thingsToDo-card">
                 <div class="col">
                     <article class="card border-0 mb-5">
                         <figure class=" thingsToDo-card-img">
@@ -395,10 +399,10 @@
     <!-- Contact Section -->
     
     <section class="contact">
-        <div class="container mt-5">
-            <div class="row flex-row card contact-card-body border-0 rounded-5">
-                <div class="col-sm-7">
-                    <div class="row card-body d-flex justify-content-center">
+        <div class="container">
+            <div class="row flex-row col-12 card border-0 rounded-5 mx-0 contact-card-body ">
+                <div class="col-md-7 order-1 order-sm-0 contact-card-message">
+                    <div class="row card-body d-flex justify-content-center text-center text-sm-start">
                         <div class="contact-card-title">Dreaming of Holidays?</div>
                         <div class="text-left contact-card-text">1,000s of holiday ideas direct to your inbox for things to do, places to see with your kids.</div>
                         <form>
@@ -415,7 +419,7 @@
                         </form>
                     </div>              
                 </div>
-                <img class="col-sm-5 rounded-3 contact-card-img" src="/assets/images/signUpPhoto.jpg" alt="sans"/>
+                <img class="col-md-5 order-0 order-sm-1 contact-card-img" src="/assets/images/signUpPhoto.jpg" alt="sans"/>
             </div>
         </div>
     </section>
@@ -424,6 +428,7 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="/app.js"></script>
 </body>
 </html>
