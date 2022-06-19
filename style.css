@@ -635,6 +635,18 @@ svg {
     padding-top: 14px;
     margin-bottom: 14px;
   }
+
+  /* Things To Do */
+
+  .thingsToDo-card-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+    .thingsToDo-card-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
