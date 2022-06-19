@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   :root {
@@ -38,7 +38,11 @@
     font-family: var(--ff-primary);
     background-image: url("/assets/images/hero-bg.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
+  }
+
+  .hero-container{
+    overflow-x: hidden;
   }
 
   .search {
@@ -136,6 +140,8 @@
     border: 1px solid #DCDCDC;
   }
 
+  .contact-card-btn
+
   .hero-text-bottom-main {
     margin-top: 24px;
     font-size: 16px;
@@ -154,6 +160,12 @@
 
   .destinations {
     background-color: var(--clr-complementary);
+  }
+
+  .destinations-container {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
 
   .destinations-heading {
@@ -210,6 +222,7 @@
 
   .thingsToDo {
     margin-top: 54px;
+    margin-bottom: 54px;
   }
 
   .thingsToDo-title {
@@ -234,8 +247,8 @@
   }
 
   .thingsToDo-card-img img{
-    height: 150px;
-    width: 200px;
+    height: 25vh;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -290,6 +303,7 @@
     margin-bottom: 100px;
     background-color: var(--clr-complementary);
   }
+
 
   .contact-card-title {
     font-family: var(--ff-secondary);
@@ -393,11 +407,11 @@
     .destinations-main {
         padding: 32px 5%;
         text-align: center;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center;
+        align-items: center;
     }
     .destinations-card {
-        width: 60vw;
+        width: 50vw;
         height: auto;
     }
     .destinations-card-title {
@@ -409,8 +423,6 @@
     .thingsToDo-browseMore-btn {
         margin-bottom: 20px;
     }
-
-
 
 /* Contact */
 
@@ -436,10 +448,6 @@
         max-width: 100% !important;
         max-height: 100% !important;
 }
-
-
-
-
   }
 
 
