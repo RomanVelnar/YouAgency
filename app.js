@@ -1,7 +1,7 @@
-function findScroller(element) {
-    element.onscroll = function() { console.log(element)}
+// function findScroller(element) {
+//     element.onscroll = function() { console.log(element)}
 
-    Array.from(element.children).forEach(findScroller);
-}
+//     Array.from(element.children).forEach(findScroller);
+// }
 
-findScroller(document.body);
+// findScroller(document.body);

@@ -370,14 +370,28 @@
     .search-selection ul li:not(:nth-child(1)):not(:nth-child(2)) {
         display: none;
     }
+    .search input {
+        font-size: 12px;
+    }
+    .hero-text-bottom-main {
+        font-size: 12px !important;
+    }
+    .hero-text-bottom-alt {
+        font-size: 12px !important;
+    }
 
 /* Destinations */
-    .destinations-title {
-        font-size: 14px !important;
+    /* .destinations {
+        width: 100% !important;
+    } */
+
+    .destinations-title-container div {
+        font-size: 18px !important;
     }
-    .destinations-button-btn {
+    .destinations-button button {
         font-size: 12px !important;
-        padding: 0px 20px !important;
+        padding: 20px 100px !important;
+        margin-bottom: 20px;
     }
     .destinations-main {
         padding: 32px 5%;
