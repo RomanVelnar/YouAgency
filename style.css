@@ -1,3 +1,20 @@
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. Reset Css and Custom Properties
+02. Hero Section
+03. Destinations
+04. Things To Do
+05. Contact
+06. Media Queries
+--------------------------------------------- */
+
+
+
+
+
+/*********************** Reset Css and Custom Properties ******************/
+
 *,
 body,
 html {
@@ -5,8 +22,9 @@ html {
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
+
+
 
 :root {
   /* font */
@@ -34,7 +52,7 @@ html {
   padding: 0;
 }
 
-/* *****************************Hero Section*************************** */
+/* ***************************** Hero Section ****************************/
 
 .hero {
   font-family: var(--ff-primary);
@@ -95,7 +113,6 @@ html {
 }
 
 .search-selection-li-last-li::after {
-  content: "\f063";
   padding-left: 10px;
   margin-top: -4px;
   content: url(/assets/images/dropdown-arrow.png);
@@ -166,7 +183,7 @@ svg {
   padding: 10px 70px;
 }
 
-/* ***********************Destinations************************ */
+/* *********************** Destinations ************************ */
 
 .destinations {
   background-color: var(--clr-complementary);
@@ -230,7 +247,7 @@ svg {
   white-space: nowrap;
 }
 
-/************************** Things To Do Section ************************/
+/************************** Things To Do ************************/
 
 .thingsToDo {
   margin-top: 54px;
@@ -306,7 +323,7 @@ svg {
   border: 1px solid #dcdcdc;
 }
 
-/****************** Contact ************************/
+/************************* Contact *****************************/
 
 .contact-card-body {
   padding-left: 57px;
@@ -368,11 +385,13 @@ svg {
   padding-right: 0;
 }
 
-/********************* Media Queries ********************************/
+/************************************* Media Queries **************************************************/
+
+/*******************************Media width < 576px ************************/
 
 @media screen and (max-width: 576px) {
 
-  /* Hero */
+  /*********** Hero ***********/
 
   .search {
     padding-top: 45% !important;
@@ -399,7 +418,7 @@ svg {
     font-size: 12px !important;
   }
 
-  /* Destinations */
+  /*********** Destinations **********/
 
   .destinations-title-container div {
     font-size: 18px !important;
@@ -424,7 +443,7 @@ svg {
     font-size: 18px;
   }
 
-  /* Things To Do */
+  /********** Things To Do **********/
 
   .thingsToDo-card-container {
     padding: 0 25%;
@@ -434,7 +453,7 @@ svg {
     margin-bottom: 20px;
   }
 
-  /* Contact */
+  /********** Contact **********/
 
   .contact {
     margin: 0px !important;
@@ -465,8 +484,12 @@ svg {
   }
 }
 
+/*********************** Media width < 768px **************************/
+
 @media only screen and (max-width: 768px) {
-  /* Hero Mobile */
+
+  /********* Hero Mobile *********/
+
   .hero {
     font-family: var(--ff-primary);
     background-image: url("/assets/images/heroBgMobile.png");
@@ -485,7 +508,8 @@ svg {
     text-align: center;
   }
 
-  /* Destinations */
+  /********** Destinations *********/
+
   .destinations-title {
     font-size: 30px !important;
   }
@@ -494,15 +518,19 @@ svg {
     padding: 0px 20px !important;
   }
 
-  /* Contact  */
+  /********* Contact  **********/
 
   .contact {
     padding: 20px;
   }
 }
 
+/********************** Media width < 992px ******************/
+
 @media only screen and (max-width: 992px) {
-  /* Hero */
+
+  /********** Hero **********/
+
   .search {
     padding: 5vh 0vw;
   }
@@ -528,7 +556,7 @@ svg {
     font-size: 16px;
   }
 
-  /* Destinations */
+  /******** Destinations **********/
 
   .destinations-title {
     font-size: 24px !important;
@@ -544,7 +572,7 @@ svg {
     font-size: 18px;
   }
 
-  /* Things To Do */
+  /********* Things To Do ********/
 
   .thingsToDo-card-container {
     margin: 0px 0px;
@@ -579,7 +607,7 @@ svg {
     padding: 16px 80px;
   }
 
-  /* Contact */
+  /******* Contact ********/
 
   .contact-card-body {
     padding-left: 20px;
@@ -623,6 +651,8 @@ svg {
   }
 }
 
+/********************* Media width < 1024px ***********************/
+
 @media only screen and (max-width: 1024px) {
   /* Hero */
   .search {
@@ -636,12 +666,14 @@ svg {
     margin-bottom: 14px;
   }
 
-  /* Things To Do */
+  /***** Things To Do **********/
 
   .thingsToDo-card-desktop {
     display: none;
   }
 }
+
+/************ Media width > 1024px  ***********************/
 
 @media only screen and (min-width: 1024px) {
     .thingsToDo-card-container {
@@ -649,8 +681,12 @@ svg {
     }
 }
 
+/**************** Media width < 1200px ********************/
+
 @media only screen and (max-width: 1200px) {
-  /* Hero */
+
+  /********** Hero ***********/
+
   .search {
     padding: 10vh 5vw;
   }
@@ -669,7 +705,8 @@ svg {
   .hero-text-bottom-alt {
     font-size: 17px;
   }
-  /* Destinations */
+
+  /********** Destinations ***********/
 
   .destinations-title {
     font-size: 26px;
@@ -685,7 +722,7 @@ svg {
     font-size: 18px;
   }
 
-  /* Things To Do */
+  /********** Things To Do ************/
 
   .thingsToDo-title {
     margin-bottom: 40px;
@@ -716,7 +753,7 @@ svg {
     padding: 16px 80px;
   }
 
-  /* Contact */
+  /*********** Contact **********/
 
   .contact-card-body {
     padding-left: 30px;
