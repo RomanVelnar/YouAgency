@@ -381,9 +381,6 @@
     }
 
 /* Destinations */
-    /* .destinations {
-        width: 100% !important;
-    } */
 
     .destinations-title-container div {
         font-size: 18px !important;
@@ -391,7 +388,7 @@
     .destinations-button button {
         font-size: 12px !important;
         padding: 20px 100px !important;
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
     }
     .destinations-main {
         padding: 32px 5%;
@@ -407,7 +404,16 @@
         font-size: 18px;
     }
 
+/* Things To Do */
+
+    .thingsToDo-browseMore-btn {
+        margin-bottom: 20px;
+    }
+
+
+
 /* Contact */
+
     .contact {
         margin: 0px !important;
         padding: 0px !important;
@@ -424,25 +430,13 @@
         max-height: 100% !important;
 
     }
-
-
-
-
-
     .contact-card-img {
-        object-fit: cover;
         margin: 0px !important;
         padding: 0px !important;
         max-width: 100% !important;
         max-height: 100% !important;
 }
-    .contact-card-message img {
-        object-fit: cover;
-        margin: 0px !important;
-        padding: 0px !important;
-        max-width: 100% !important;
-        max-height: 100% !important;
-}
+
 
 
 
